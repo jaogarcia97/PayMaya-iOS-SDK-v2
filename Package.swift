@@ -1,12 +1,13 @@
+// swift-tools-version:5.1
 import PackageDescription
 
 let package = Package(
-    name: "PayMayaSDK",
+    name: "PayMaya-iOS-SDK-v2",
     products: [
         .library(name: "PayMayaSDK", targets: ["PayMayaSDK"])
     ],
     targets: [
-        .target(name: "PayMayaSDK", path: "PayMayaSDK"),
+        .target(name: "PayMayaSDK", path: "Sources"),
         .testTarget(name: "PayMayaSDKTests", path: "PayMayaSDK")
     ]
 )
