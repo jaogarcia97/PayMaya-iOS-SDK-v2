@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PayMaya-iOS-SDK-v2",
+    name: "PayMayaSDK",
     products: [
         .library(name: "PayMayaSDK", targets: ["PayMayaSDK"])
     ],
