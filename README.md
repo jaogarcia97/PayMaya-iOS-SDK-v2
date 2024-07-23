@@ -8,7 +8,7 @@ iOS 12.0 or later
 Specifically add a coment // swift-tools-version:5.1 on the first line of the Package.swift (Reference https://stackoverflow.com/questions/61456838/swift-package-manager-tools-version-for-development-snapshots)
 It is important to edit the folder tartget path and test target before using it. (Reference: https://developer.apple.com/videos/play/wwdc2019/410)
 
-```
+```swift
 // swift-tools-version:5.1
 import PackageDescription
 
