@@ -4,6 +4,28 @@ The PayMaya iOS SDK is a library that allows you to easily add credit and debit 
 ## Compatibility
 iOS 12.0 or later
 
+## Jao's Fixes
+Specifically add a coment // swift-tools-version:5.1 on the first line of the Package.swift (Reference https://stackoverflow.com/questions/61456838/swift-package-manager-tools-version-for-development-snapshots)
+It is important to edit the folder tartget path and test target before using it. (Reference: https://developer.apple.com/videos/play/wwdc2019/410)
+
+```
+// swift-tools-version:5.1
+import PackageDescription
+
+let package = Package(
+    name: "PayMayaSDK",
+    products: [
+        .library(name: "PayMayaSDK", targets: ["PayMayaSDK"])
+    ],
+    targets: [
+        .target(name: "PayMayaSDK", path: "Sources"),
+        .testTarget(name: "PayMayaSDKTests", path: "PayMayaSDK")
+    ]
+)
+```
+
+<img width="693" alt="image" src="https://github.com/user-attachments/assets/e03e3d0f-712f-4d43-ad15-e2c0990f5f3b">
+
 ## Integration
 
 ##### via CocoaPods
